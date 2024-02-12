@@ -56,7 +56,7 @@ def recommend_movies(movie_name, movies_data, similarity):
 
 def similar_movies(name:str):
     # Load data
-    movies_data = load_data('/Users/devanshyadav/Desktop/Projects/movies-recommendation/backend/movies.csv')
+    movies_data = load_data('movies.csv')
     print('we are in similar moves ',name)
     # Preprocess data
     combined_features = preprocess_data(movies_data)
