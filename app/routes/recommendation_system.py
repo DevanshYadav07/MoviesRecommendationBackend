@@ -51,13 +51,13 @@ def recommend_movies(movie_name, movies_data, similarity):
             # print(i, '.', title_from_index)
             i += 1
 
-    print("movies array :",movies_array)
+    # print("movies array :",movies_array)
     return movies_array
 
-def similar_movies(name:str):
+def similar_movies (name:str):
     # Load data
-    movies_data = load_data('movies.csv')
-    print('we are in similar moves ',name)
+    movies_data = load_data('app/movies.csv')
+    # print('we are in similar moves ',name)
     # Preprocess data
     combined_features = preprocess_data(movies_data)
 
